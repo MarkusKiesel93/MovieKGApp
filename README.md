@@ -1,5 +1,8 @@
 # Movie KG App
 
+Simple JFrame application with basic operations on a Knowledge Graph containing movie data.
+This application was created for a Semantic Systems course.
+
 ## Functionalities
 
 ### Basic operations
