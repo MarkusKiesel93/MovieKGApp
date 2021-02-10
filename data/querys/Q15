@@ -1,0 +1,4 @@
+PREFIX : <http://semantics.id/ns/example/movie#>
+select ?movie (count(?actor) as ?num_actors) where {
+	?movie :hasActor ?actor .
+} group by ?movie

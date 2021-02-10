@@ -1,0 +1,10 @@
+PREFIX : <http://semantics.id/ns/example/movie#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+select ?name where {
+	?movie :hasActor ?actor .
+    ?actor :hasName ?name .
+    ?movie rdfs:label ?title .
+	?movie :hasReleaseDate ?rdate .
+    filter (?rdate > "2016-12-31"^^xsd:date && regex(?title, "Beauty*"))
+}

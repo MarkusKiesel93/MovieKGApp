@@ -1,0 +1,2646 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:www="http://www.movieontology.org/2009/11/09/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:obda="https://w3id.org/obda/vocabulary#"
+    xmlns="http://semantics.id/ns/example/movie#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:ex="http://semantics.id/ns/example#"
+    xmlns:j.0="http://xmlns.com/foaf/0.1/"
+    xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://semantics.id/ns/example/movie">
+    <rdfs:comment>An ontology about movie and related concepts.</rdfs:comment>
+    <owl:versionIRI rdf:resource="http://semantics.id/ns/example/movie/1.0.1"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie"/>
+  </owl:Ontology>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#byte"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#short"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#decimal">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedInt">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#long"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonthDay">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonth">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#long">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#int">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#short">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedShort">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#byte"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#byte">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#hexBinary">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#nonPositiveInteger">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedLong">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <rdfs:subClassOf>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#double">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#float">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyURI">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gDay">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#gDay"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#gDay"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#gDay"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#unsignedByte">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:disjointWith>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#base64Binary">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith>
+      <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#positiveInteger">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:disjointWith rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#negativeInteger">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#negativeInteger"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#negativeInteger"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#negativeInteger"/>
+  </rdfs:Datatype>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#SymmetricProperty">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#InverseFunctionalProperty">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://semantics.id/ns/example/movie#MovieDirector">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#MovieDirector"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://semantics.id/ns/example/movie#MovieDirector"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#MovieDirector"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#TransitiveProperty">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://semantics.id/ns/example/movie#FilmStudio">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#FilmStudio"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://semantics.id/ns/example/movie#FilmStudio"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#FilmStudio"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://semantics.id/ns/example/movie#Actor">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#Actor"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://semantics.id/ns/example/movie#Actor"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#Actor"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://semantics.id/ns/example/movie#Movie">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#FunctionalProperty">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://semantics.id/ns/example/movie#Genre">
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#Genre"/>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://semantics.id/ns/example/movie#Genre"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </rdf:type>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#Genre"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:equivalentClass>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:equivalentClass>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    </rdfs:subClassOf>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type>
+      <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class"/>
+    </rdf:type>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </owl:equivalentClass>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#OntologyProperty">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#OntologyProperty"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#OntologyProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#OntologyProperty"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Property">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Property"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Property"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://semantics.id/ns/example/movie#Writer">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#Writer"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://semantics.id/ns/example/movie#Writer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#Writer"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Ontology">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#AnnotationProperty">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdfs:subClassOf>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#NamedIndividual">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Restriction">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdf:type>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:type>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdfs:Class>
+  <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Nothing">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#Genre"/>
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#MovieDirector"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedByte"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#Actor"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Property"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#nonPositiveInteger"/>
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#Writer"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://semantics.id/ns/example/movie#FilmStudio"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#short"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedShort"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://semantics.id/ns/example/movie#hasCrew">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#hasCrew"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasCrew"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#hasCrew"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/knows">
+    <owl:equivalentProperty rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+  </owl:ObjectProperty>
+  <rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+    <rdfs:subPropertyOf>
+      <rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    </rdfs:subPropertyOf>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://semantics.id/ns/example/movie#hasGenre">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#hasGenre"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >1</owl:minCardinality>
+    <rdfs:range rdf:resource="http://semantics.id/ns/example/movie#Genre"/>
+    <rdfs:domain rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasGenre"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#hasGenre"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#incompatibleWith">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#incompatibleWith"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#incompatibleWith"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#incompatibleWith"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#backwardCompatibleWith">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#backwardCompatibleWith"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#backwardCompatibleWith"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#backwardCompatibleWith"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#equivalentClass">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#oneOf">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#oneOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#oneOf"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#oneOf"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#onProperty">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Property"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#onProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#onProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#onProperty"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://semantics.id/ns/example/movie#hasWriter">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#hasWriter"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasWriter"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasCrew"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >1</owl:minCardinality>
+    <rdfs:range rdf:resource="http://semantics.id/ns/example/movie#Writer"/>
+    <rdfs:domain rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#hasWriter"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#minCardinality">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#minCardinality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#minCardinality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#minCardinality"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://semantics.id/ns/example/movie#hasReleaseDate">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#hasReleaseDate"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasReleaseDate"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#hasReleaseDate"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://semantics.id/ns/example/movie#hasActor">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#hasActor"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >1</owl:minCardinality>
+    <rdfs:range rdf:resource="http://semantics.id/ns/example/movie#Actor"/>
+    <rdfs:domain rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasActor"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#hasActor"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://semantics.id/ns/example/movie#hasName">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#hasName"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasName"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#hasName"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#equivalentProperty">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://semantics.id/ns/example/movie#hasFilmStudio">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#hasFilmStudio"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >1</owl:minCardinality>
+    <rdfs:range rdf:resource="http://semantics.id/ns/example/movie#FilmStudio"/>
+    <rdfs:domain rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasFilmStudio"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#hasFilmStudio"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#versionIRI">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#versionIRI"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionIRI"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#versionIRI"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://semantics.id/ns/example/movie#hasMovieDirector">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#hasMovieDirector"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasMovieDirector"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasCrew"/>
+    <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >1</owl:minCardinality>
+    <rdfs:range rdf:resource="http://semantics.id/ns/example/movie#MovieDirector"/>
+    <rdfs:domain rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#hasMovieDirector"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#priorVersion">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#priorVersion"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#priorVersion"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#priorVersion"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://semantics.id/ns/example/movie#hasGender">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#hasGender"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasGender"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#hasGender"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://semantics.id/ns/example/movie#hasDateOfBirth">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#hasDateOfBirth"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasDateOfBirth"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#hasDateOfBirth"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.w3.org/2002/07/owl#intersectionOf">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#intersectionOf"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://semantics.id/ns/example/movie#hasEstablishedDate">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#hasEstablishedDate"/>
+    <rdfs:domain rdf:resource="http://semantics.id/ns/example/movie#FilmStudio"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#hasEstablishedDate"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#hasEstablishedDate"/>
+  </rdf:Property>
+  <owl:SymmetricProperty rdf:about="http://www.w3.org/2002/07/owl#differentFrom">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#differentFrom"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#differentFrom"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#differentFrom"/>
+  </owl:SymmetricProperty>
+  <owl:SymmetricProperty rdf:about="http://www.w3.org/2002/07/owl#disjointWith">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
+  </owl:SymmetricProperty>
+  <owl:SymmetricProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs">
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+  </owl:SymmetricProperty>
+  <owl:SymmetricProperty rdf:about="http://semantics.id/ns/example/movie#friendOf">
+    <owl:equivalentProperty rdf:resource="http://semantics.id/ns/example/movie#friendOf"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subPropertyOf rdf:resource="http://semantics.id/ns/example/movie#friendOf"/>
+    <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#friendOf"/>
+  </owl:SymmetricProperty>
+  <Writer rdf:about="http://semantics.id/ns/example#writer_3">
+    <hasName>John Collee</hasName>
+    <hasGender>male</hasGender>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#writer_3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </Writer>
+  <Writer rdf:about="http://semantics.id/ns/example#writer_5">
+    <hasName>Evan Spiliotopoulos</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#writer_5"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </Writer>
+  <Genre rdf:about="http://semantics.id/ns/example/movie#genre_animation">
+    <rdfs:label>Animation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#genre_animation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </Genre>
+  <Genre rdf:about="http://semantics.id/ns/example/movie#genre_family">
+    <rdfs:label>Family</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#genre_family"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </Genre>
+  <MovieDirector rdf:about="http://semantics.id/ns/example#bill_condon">
+    <hasName>Bill Condon</hasName>
+    <hasGender>male</hasGender>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#bill_condon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </MovieDirector>
+  <Writer rdf:about="http://semantics.id/ns/example#writer_1">
+    <hasName>Tom McCarthy</hasName>
+    <hasGender>male</hasGender>
+    <hasDateOfBirth>1966-06-07</hasDateOfBirth>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#writer_1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </Writer>
+  <Actor rdf:about="http://semantics.id/ns/example#dan_stevens">
+    <hasName>Dan Stevens</hasName>
+    <hasGender>male</hasGender>
+    <hasDateOfBirth>1982-10-10</hasDateOfBirth>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#dan_stevens"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </Actor>
+  <FilmStudio rdf:about="http://semantics.id/ns/example#WaltDisneyPictures">
+    <rdfs:label>Walt Disney Pictures</rdfs:label>
+    <hasEstablishedDate>1985-06-21</hasEstablishedDate>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#WaltDisneyPictures"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </FilmStudio>
+  <Writer rdf:about="http://semantics.id/ns/example#writer_4">
+    <hasName>Stephen Chbosky</hasName>
+    <hasGender>male</hasGender>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#writer_4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </Writer>
+  <Genre rdf:about="http://semantics.id/ns/example/movie#genre_romance">
+    <rdfs:label>Romance</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#genre_romance"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </Genre>
+  <Actor rdf:about="http://semantics.id/ns/example#alicia_vikander">
+    <hasName>Alicia Vikander</hasName>
+    <hasGender>female</hasGender>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#alicia_vikander"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </Actor>
+  <Genre rdf:about="http://semantics.id/ns/example/movie#genre_action">
+    <rdfs:label>Action</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#genre_action"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </Genre>
+  <Genre rdf:about="http://semantics.id/ns/example/movie#genre_drama">
+    <rdfs:label>Drama</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example/movie#genre_drama"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </Genre>
+  <Actor rdf:about="http://semantics.id/ns/example#hayley_atwell">
+    <hasName>Hayley Atwell</hasName>
+    <hasGender>female</hasGender>
+    <hasDateOfBirth>1982-04-05</hasDateOfBirth>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#hayley_atwell"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </Actor>
+  <MovieDirector rdf:about="http://semantics.id/ns/example#marc_forster">
+    <hasName>Marc Forster</hasName>
+    <hasGender>male</hasGender>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#marc_forster"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </MovieDirector>
+  <FilmStudio rdf:about="http://semantics.id/ns/example#EntertainmentOne">
+    <rdfs:label>Entertainment One</rdfs:label>
+    <hasEstablishedDate>1973-01-01</hasEstablishedDate>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#EntertainmentOne"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </FilmStudio>
+  <Writer rdf:about="http://semantics.id/ns/example#julius_avery">
+    <hasName>Julius Avery</hasName>
+    <hasGender>male</hasGender>
+    <rdf:type rdf:resource="http://semantics.id/ns/example/movie#MovieDirector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#julius_avery"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </Writer>
+  <Writer rdf:about="http://semantics.id/ns/example#writer_2">
+    <hasName>Alex Ross</hasName>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#writer_2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </Writer>
+  <owl:OntologyProperty rdf:about="http://www.w3.org/2002/07/owl#imports">
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#imports"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#imports"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#imports"/>
+  </owl:OntologyProperty>
+  <Actor rdf:about="http://semantics.id/ns/example#ewan_mcgregor">
+    <hasName>Ewan McGregor</hasName>
+    <hasGender>male</hasGender>
+    <hasDateOfBirth>1971-03-31</hasDateOfBirth>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#ewan_mcgregor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </Actor>
+  <Actor rdf:about="http://semantics.id/ns/example#emma_watson">
+    <hasName>Emma Watson</hasName>
+    <hasGender>female</hasGender>
+    <hasDateOfBirth>1990-04-15</hasDateOfBirth>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#emma_watson"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </Actor>
+  <rdf:Property rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+  </rdf:Property>
+  <Movie rdf:about="http://semantics.id/ns/example#movie_1">
+    <rdfs:label>Christopher Robin</rdfs:label>
+    <hasWriter rdf:resource="http://semantics.id/ns/example#writer_2"/>
+    <hasGenre rdf:resource="http://semantics.id/ns/example/movie#genre_family"/>
+    <hasWriter rdf:resource="http://semantics.id/ns/example#writer_1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasActor rdf:resource="http://semantics.id/ns/example#hayley_atwell"/>
+    <hasReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2018-01-01</hasReleaseDate>
+    <hasFilmStudio rdf:resource="http://semantics.id/ns/example#WaltDisneyPictures"/>
+    <hasActor rdf:resource="http://semantics.id/ns/example#ewan_mcgregor"/>
+    <hasMovieDirector rdf:resource="http://semantics.id/ns/example#marc_forster"/>
+    <hasGenre rdf:resource="http://semantics.id/ns/example/movie#genre_animation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#movie_1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <hasCrew rdf:resource="http://semantics.id/ns/example#marc_forster"/>
+    <hasCrew rdf:resource="http://semantics.id/ns/example#writer_2"/>
+    <hasCrew rdf:resource="http://semantics.id/ns/example#writer_1"/>
+  </Movie>
+  <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+  </owl:AnnotationProperty>
+  <rdf:List rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:List>
+  <Movie rdf:about="http://semantics.id/ns/example#movie_2">
+    <hasWriter rdf:resource="http://semantics.id/ns/example#writer_3"/>
+    <hasFilmStudio rdf:resource="http://semantics.id/ns/example#EntertainmentOne"/>
+    <hasActor rdf:resource="http://semantics.id/ns/example#ewan_mcgregor"/>
+    <hasActor rdf:resource="http://semantics.id/ns/example#alicia_vikander"/>
+    <hasGenre rdf:resource="http://semantics.id/ns/example/movie#genre_drama"/>
+    <hasReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2014-01-01</hasReleaseDate>
+    <hasMovieDirector rdf:resource="http://semantics.id/ns/example#julius_avery"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <hasGenre rdf:resource="http://semantics.id/ns/example/movie#genre_action"/>
+    <rdfs:label>Son of a Gun</rdfs:label>
+    <hasWriter rdf:resource="http://semantics.id/ns/example#julius_avery"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#movie_2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <hasCrew rdf:resource="http://semantics.id/ns/example#julius_avery"/>
+    <hasCrew rdf:resource="http://semantics.id/ns/example#writer_3"/>
+  </Movie>
+  <FilmStudio rdf:about="http://semantics.id/ns/example#MandevilleFilms">
+    <rdfs:label>Mandeville Films</rdfs:label>
+    <hasEstablishedDate>1955-01-01</hasEstablishedDate>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#MandevilleFilms"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </FilmStudio>
+  <owl:NamedIndividual rdf:about="http://semantics.id/ns/example#movie_3">
+    <hasActor rdf:resource="http://semantics.id/ns/example#dan_stevens"/>
+    <rdf:type rdf:resource="http://semantics.id/ns/example/movie#Movie"/>
+    <hasFilmStudio rdf:resource="http://semantics.id/ns/example#WaltDisneyPictures"/>
+    <hasGenre rdf:resource="http://semantics.id/ns/example/movie#genre_family"/>
+    <hasActor rdf:resource="http://semantics.id/ns/example#emma_watson"/>
+    <hasWriter rdf:resource="http://semantics.id/ns/example#writer_4"/>
+    <hasReleaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2017-01-01</hasReleaseDate>
+    <hasGenre rdf:resource="http://semantics.id/ns/example/movie#genre_romance"/>
+    <hasActor rdf:resource="http://semantics.id/ns/example#ewan_mcgregor"/>
+    <hasMovieDirector rdf:resource="http://semantics.id/ns/example#bill_condon"/>
+    <rdfs:label xml:lang="en">Beauty and the Beast</rdfs:label>
+    <hasWriter rdf:resource="http://semantics.id/ns/example#writer_5"/>
+    <hasGenre rdf:resource="http://semantics.id/ns/example/movie#genre_animation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:sameAs rdf:resource="http://semantics.id/ns/example#movie_3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <hasCrew rdf:resource="http://semantics.id/ns/example#bill_condon"/>
+    <hasCrew rdf:resource="http://semantics.id/ns/example#writer_4"/>
+    <hasCrew rdf:resource="http://semantics.id/ns/example#writer_5"/>
+  </owl:NamedIndividual>
+</rdf:RDF>

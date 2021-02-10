@@ -1,0 +1,790 @@
+@prefix :      <http://semantics.id/ns/example/movie#> .
+@prefix ex:    <http://semantics.id/ns/example#> .
+@prefix obda:  <https://w3id.org/obda/vocabulary#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix www:   <http://www.movieontology.org/2009/11/09/> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+xsd:nonPositiveInteger
+        a                    rdfs:Datatype , rdfs:Resource , rdfs:Class , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , xsd:nonPositiveInteger , rdfs:Resource ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:nonPositiveInteger ;
+        owl:sameAs           xsd:nonPositiveInteger .
+
+xsd:gMonthDay  a             rdfs:Datatype , rdfs:Resource , rdfs:Class , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , xsd:gMonthDay , owl:Thing ;
+        owl:equivalentClass  xsd:gMonthDay ;
+        owl:sameAs           xsd:gMonthDay .
+
+owl:Restriction  a           rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:Class , rdfs:Resource , owl:Restriction , rdfs:Class , owl:Thing ;
+        owl:equivalentClass  owl:Restriction ;
+        owl:sameAs           owl:Restriction .
+
+rdf:nil  a          rdf:List , rdfs:Resource , owl:Thing ;
+        owl:sameAs  () .
+
+xsd:gYearMonth  a            rdfs:Datatype , rdfs:Resource , rdfs:Class , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , xsd:gYearMonth , owl:Thing ;
+        owl:equivalentClass  xsd:gYearMonth ;
+        owl:sameAs           xsd:gYearMonth .
+
+xsd:unsignedShort  a         rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      xsd:unsignedLong , xsd:unsignedInt , xsd:int , xsd:integer , xsd:long , xsd:short , xsd:nonNegativeInteger , xsd:unsignedShort , rdfs:Resource , owl:Thing , xsd:decimal ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:unsignedShort ;
+        owl:sameAs           xsd:unsignedShort .
+
+owl:disjointWith  a             owl:SymmetricProperty , owl:ObjectProperty , rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Class , owl:Thing , rdfs:Class , rdfs:Resource ;
+        rdfs:range              owl:Class , owl:Thing , rdfs:Class , rdfs:Resource ;
+        rdfs:subPropertyOf      owl:disjointWith ;
+        owl:equivalentProperty  owl:disjointWith ;
+        owl:sameAs              owl:disjointWith .
+
+xsd:dateTime  a              rdfs:Datatype , rdfs:Resource , rdfs:Class , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , xsd:dateTime , rdfs:Resource ;
+        owl:disjointWith     xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:float , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger ;
+        owl:equivalentClass  xsd:dateTime ;
+        owl:sameAs           xsd:dateTime .
+
+owl:differentFrom  a            owl:SymmetricProperty , owl:ObjectProperty , rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Thing , rdfs:Resource ;
+        rdfs:range              owl:Thing , rdfs:Resource ;
+        rdfs:subPropertyOf      owl:differentFrom ;
+        owl:equivalentProperty  owl:differentFrom ;
+        owl:sameAs              owl:differentFrom .
+
+xsd:unsignedInt  a           rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      xsd:unsignedLong , xsd:unsignedInt , xsd:int , xsd:integer , xsd:long , xsd:nonNegativeInteger , rdfs:Resource , owl:Thing , xsd:decimal ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:unsignedInt ;
+        owl:sameAs           xsd:unsignedInt .
+
+xsd:byte  a                  rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      xsd:int , xsd:integer , xsd:long , xsd:byte , xsd:short , rdfs:Resource , owl:Thing , xsd:decimal ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:byte ;
+        owl:sameAs           xsd:byte .
+
+rdf:Seq  a                   rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Container , rdfs:Resource , rdf:Seq , owl:Thing ;
+        owl:equivalentClass  rdf:Seq ;
+        owl:sameAs           rdf:Seq .
+
+rdfs:range  a                   rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:range              rdfs:Class , rdfs:Resource , owl:Thing , owl:Class ;
+        rdfs:subPropertyOf      rdfs:range ;
+        owl:equivalentProperty  rdfs:range ;
+        owl:sameAs              rdfs:range .
+
+owl:FunctionalProperty
+        a                    rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdf:Property , owl:FunctionalProperty , rdfs:Resource , owl:Thing ;
+        owl:equivalentClass  owl:FunctionalProperty ;
+        owl:sameAs           owl:FunctionalProperty .
+
+owl:sameAs  a                   owl:SymmetricProperty , rdf:Property , owl:ObjectProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Thing , rdfs:Resource ;
+        rdfs:range              owl:Thing , rdfs:Resource ;
+        rdfs:subPropertyOf      owl:sameAs ;
+        owl:equivalentProperty  owl:sameAs ;
+        owl:sameAs              owl:sameAs .
+
+owl:backwardCompatibleWith
+        a                       rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Ontology , rdfs:Resource , owl:Thing ;
+        rdfs:range              owl:Ontology , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      owl:backwardCompatibleWith ;
+        owl:equivalentProperty  owl:backwardCompatibleWith ;
+        owl:sameAs              owl:backwardCompatibleWith .
+
+xsd:anyURI  a                rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , xsd:anyURI , owl:Thing ;
+        owl:equivalentClass  xsd:anyURI ;
+        owl:sameAs           xsd:anyURI .
+
+xsd:positiveInteger  a       rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , xsd:positiveInteger , owl:Thing ;
+        owl:equivalentClass  xsd:positiveInteger ;
+        owl:sameAs           xsd:positiveInteger .
+
+xsd:double  a                rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , xsd:double , owl:Thing ;
+        owl:equivalentClass  xsd:double ;
+        owl:sameAs           xsd:double .
+
+rdf:XMLLiteral  a            rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , rdf:XMLLiteral , owl:Thing ;
+        owl:equivalentClass  rdf:XMLLiteral ;
+        owl:sameAs           rdf:XMLLiteral .
+
+xsd:gMonth  a                rdfs:Datatype , rdfs:Resource , rdfs:Class , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , xsd:gMonth , owl:Thing ;
+        owl:equivalentClass  xsd:gMonth ;
+        owl:sameAs           xsd:gMonth .
+
+xsd:string  a                rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      xsd:string , rdfs:Resource , owl:Thing ;
+        owl:disjointWith     xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:float , xsd:dateTime , xsd:int , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger ;
+        owl:equivalentClass  xsd:string ;
+        owl:sameAs           xsd:string .
+
+xsd:base64Binary  a          rdfs:Datatype , rdfs:Resource , rdfs:Class , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , xsd:base64Binary , owl:Thing ;
+        owl:equivalentClass  xsd:base64Binary ;
+        owl:sameAs           xsd:base64Binary .
+
+owl:equivalentClass  a          rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Class , rdfs:Class , rdfs:Resource , owl:Thing ;
+        rdfs:range              owl:Class , rdfs:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      owl:equivalentClass ;
+        owl:equivalentProperty  owl:equivalentClass ;
+        owl:sameAs              owl:equivalentClass .
+
+xsd:nonNegativeInteger
+        a                    rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      xsd:integer , xsd:nonNegativeInteger , rdfs:Resource , owl:Thing , xsd:decimal ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:nonNegativeInteger ;
+        owl:sameAs           xsd:nonNegativeInteger .
+
+owl:InverseFunctionalProperty
+        a                    rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:ObjectProperty , owl:InverseFunctionalProperty , rdfs:Resource , owl:Thing , rdf:Property ;
+        owl:equivalentClass  owl:InverseFunctionalProperty ;
+        owl:sameAs           owl:InverseFunctionalProperty .
+
+rdfs:Resource  a             rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , owl:Thing ;
+        owl:equivalentClass  rdfs:Resource , owl:Thing ;
+        owl:sameAs           rdfs:Resource .
+
+rdfs:subPropertyOf  a           rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:range              rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      rdfs:subPropertyOf ;
+        owl:equivalentProperty  rdfs:subPropertyOf ;
+        owl:sameAs              rdfs:subPropertyOf .
+
+owl:OntologyProperty  a      rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdf:Property , owl:OntologyProperty , rdfs:Resource , owl:Thing ;
+        owl:equivalentClass  owl:OntologyProperty ;
+        owl:sameAs           owl:OntologyProperty .
+
+xsd:unsignedLong  a          rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      xsd:unsignedLong , xsd:integer , xsd:long , xsd:nonNegativeInteger , rdfs:Resource , owl:Thing , xsd:decimal ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:unsignedLong ;
+        owl:sameAs           xsd:unsignedLong .
+
+rdfs:domain  a                  rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:range              rdfs:Class , rdfs:Resource , owl:Thing , owl:Class ;
+        rdfs:subPropertyOf      rdfs:domain ;
+        owl:equivalentProperty  rdfs:domain ;
+        owl:sameAs              rdfs:domain .
+
+rdfs:ContainerMembershipProperty
+        a                    rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdf:Property , rdfs:ContainerMembershipProperty , rdfs:Resource , owl:Thing ;
+        owl:equivalentClass  rdfs:ContainerMembershipProperty ;
+        owl:sameAs           rdfs:ContainerMembershipProperty .
+
+rdf:subject  a                  rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             rdf:Statement , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      rdf:subject ;
+        owl:equivalentProperty  rdf:subject ;
+        owl:sameAs              rdf:subject .
+
+rdfs:Datatype  a             rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Class , rdfs:Datatype , rdfs:Resource , owl:Thing ;
+        owl:equivalentClass  rdfs:Datatype ;
+        owl:sameAs           rdfs:Datatype .
+
+xsd:time  a                  rdfs:Datatype , rdfs:Resource , rdfs:Class , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , xsd:time , rdfs:Resource ;
+        owl:disjointWith     xsd:long , xsd:byte , xsd:unsignedShort , xsd:unsignedLong , xsd:float , xsd:dateTime , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger ;
+        owl:equivalentClass  xsd:time ;
+        owl:sameAs           xsd:time .
+
+rdf:List  a                  rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , rdf:List , owl:Thing ;
+        owl:equivalentClass  rdf:List ;
+        owl:sameAs           rdf:List .
+
+owl:imports  a                  owl:OntologyProperty , rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Ontology , rdfs:Resource , owl:Thing ;
+        rdfs:range              owl:Ontology , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      owl:imports ;
+        owl:equivalentProperty  owl:imports ;
+        owl:sameAs              owl:imports .
+
+owl:TransitiveProperty
+        a                    rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:ObjectProperty , owl:TransitiveProperty , rdfs:Resource , owl:Thing , rdf:Property ;
+        owl:equivalentClass  owl:TransitiveProperty ;
+        owl:sameAs           owl:TransitiveProperty .
+
+owl:ObjectProperty  a        rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdf:Property , owl:ObjectProperty , rdfs:Resource , owl:Thing ;
+        owl:equivalentClass  owl:ObjectProperty ;
+        owl:sameAs           owl:ObjectProperty .
+
+rdf:Property  a              rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , rdf:Property , owl:Thing ;
+        owl:equivalentClass  rdf:Property ;
+        owl:sameAs           rdf:Property .
+
+rdf:first  a                    rdf:Property , owl:FunctionalProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             rdf:List , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      rdf:first ;
+        owl:equivalentProperty  rdf:first ;
+        owl:sameAs              rdf:first .
+
+owl:oneOf  a                    rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Class , rdfs:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      owl:oneOf ;
+        owl:equivalentProperty  owl:oneOf ;
+        owl:sameAs              owl:oneOf .
+
+xsd:negativeInteger  a       rdfs:Datatype , rdfs:Resource , rdfs:Class , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , xsd:negativeInteger , owl:Thing ;
+        owl:equivalentClass  xsd:negativeInteger ;
+        owl:sameAs           xsd:negativeInteger .
+
+xsd:hexBinary  a             rdfs:Datatype , rdfs:Resource , rdfs:Class , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , xsd:hexBinary , owl:Thing ;
+        owl:equivalentClass  xsd:hexBinary ;
+        owl:sameAs           xsd:hexBinary .
+
+owl:priorVersion  a             rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Ontology , rdfs:Resource , owl:Thing ;
+        rdfs:range              owl:Ontology , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      owl:priorVersion ;
+        owl:equivalentProperty  owl:priorVersion ;
+        owl:sameAs              owl:priorVersion .
+
+owl:intersectionOf  a           rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Class , rdfs:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      owl:intersectionOf ;
+        owl:equivalentProperty  owl:intersectionOf ;
+        owl:sameAs              owl:intersectionOf .
+
+owl:incompatibleWith  a         rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Ontology , rdfs:Resource , owl:Thing ;
+        rdfs:range              owl:Ontology , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      owl:incompatibleWith ;
+        owl:equivalentProperty  owl:incompatibleWith ;
+        owl:sameAs              owl:incompatibleWith .
+
+owl:DatatypeProperty  a      rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdf:Property , owl:DatatypeProperty , rdfs:Resource , owl:Thing ;
+        owl:equivalentClass  owl:DatatypeProperty ;
+        owl:sameAs           owl:DatatypeProperty .
+
+owl:Ontology  a              rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , owl:Ontology , owl:Thing ;
+        owl:equivalentClass  owl:Ontology ;
+        owl:sameAs           owl:Ontology .
+
+rdf:Alt  a                   rdfs:Resource , rdfs:Class , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Container , rdfs:Resource , rdf:Alt , owl:Thing ;
+        owl:equivalentClass  rdf:Alt ;
+        owl:sameAs           rdf:Alt .
+
+xsd:gDay  a                  rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , xsd:gDay , owl:Thing ;
+        owl:equivalentClass  xsd:gDay ;
+        owl:sameAs           xsd:gDay .
+
+rdf:type  a                     rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:range              rdfs:Class , rdfs:Resource , owl:Thing , owl:Class ;
+        rdfs:subPropertyOf      rdf:type ;
+        owl:equivalentProperty  rdf:type ;
+        owl:sameAs              rdf:type .
+
+xsd:unsignedByte  a          rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      xsd:unsignedLong , xsd:unsignedInt , xsd:int , xsd:integer , xsd:long , xsd:byte , xsd:short , xsd:unsignedByte , xsd:nonNegativeInteger , xsd:unsignedShort , rdfs:Resource , owl:Thing , xsd:decimal ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:unsignedByte ;
+        owl:sameAs           xsd:unsignedByte .
+
+rdfs:subClassOf  a              rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             rdfs:Class , rdfs:Resource , owl:Thing , owl:Class ;
+        rdfs:range              rdfs:Class , rdfs:Resource , owl:Thing , owl:Class ;
+        rdfs:subPropertyOf      rdfs:subClassOf ;
+        owl:equivalentProperty  rdfs:subClassOf ;
+        owl:sameAs              rdfs:subClassOf .
+
+xsd:float  a                 rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , xsd:float , rdfs:Resource ;
+        owl:disjointWith     xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:dateTime , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger ;
+        owl:equivalentClass  xsd:float ;
+        owl:sameAs           xsd:float .
+
+owl:Thing  a                 owl:Class , rdfs:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , rdfs:Resource ;
+        owl:equivalentClass  owl:Thing , rdfs:Resource ;
+        owl:sameAs           owl:Thing .
+
+rdf:object  a                   rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             rdf:Statement , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      rdf:object ;
+        owl:equivalentProperty  rdf:object ;
+        owl:sameAs              rdf:object .
+
+xsd:decimal  a               rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , xsd:decimal , rdfs:Resource ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:decimal ;
+        owl:sameAs           xsd:decimal .
+
+owl:SymmetricProperty
+        a                    rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:ObjectProperty , owl:SymmetricProperty , rdfs:Resource , owl:Thing , rdf:Property ;
+        owl:equivalentClass  owl:SymmetricProperty ;
+        owl:sameAs           owl:SymmetricProperty .
+
+xsd:boolean  a               rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , xsd:boolean , rdfs:Resource ;
+        owl:disjointWith     xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:float , xsd:dateTime , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:nonPositiveInteger ;
+        owl:equivalentClass  xsd:boolean ;
+        owl:sameAs           xsd:boolean .
+
+rdf:Bag  a                   rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Container , rdfs:Resource , rdf:Bag , owl:Thing ;
+        owl:equivalentClass  rdf:Bag ;
+        owl:sameAs           rdf:Bag .
+
+rdf:predicate  a                rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             rdf:Statement , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      rdf:predicate ;
+        owl:equivalentProperty  rdf:predicate ;
+        owl:sameAs              rdf:predicate .
+
+xsd:long  a                  rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      xsd:integer , xsd:long , rdfs:Resource , owl:Thing , xsd:decimal ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:long ;
+        owl:sameAs           xsd:long .
+
+xsd:short  a                 rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      xsd:int , xsd:integer , xsd:long , xsd:short , rdfs:Resource , owl:Thing , xsd:decimal ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:short ;
+        owl:sameAs           xsd:short .
+
+owl:versionInfo  a  owl:AnnotationProperty , rdfs:Resource , owl:Thing ;
+        owl:sameAs  owl:versionInfo .
+
+rdf:Statement  a             rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , rdf:Statement , owl:Thing ;
+        owl:equivalentClass  rdf:Statement ;
+        owl:sameAs           rdf:Statement .
+
+rdfs:isDefinedBy  a             rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      rdfs:seeAlso , rdfs:isDefinedBy ;
+        owl:equivalentProperty  rdfs:isDefinedBy ;
+        owl:sameAs              rdfs:isDefinedBy .
+
+xsd:int  a                   rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      xsd:int , xsd:integer , xsd:long , rdfs:Resource , owl:Thing , xsd:decimal ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:int ;
+        owl:sameAs           xsd:int .
+
+owl:onProperty  a               rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Restriction , owl:Class , rdfs:Resource , rdfs:Class , owl:Thing ;
+        rdfs:range              owl:Property , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      owl:onProperty ;
+        owl:equivalentProperty  owl:onProperty ;
+        owl:sameAs              owl:onProperty .
+
+xsd:integer  a               rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      xsd:decimal , xsd:integer , rdfs:Resource , owl:Thing ;
+        owl:disjointWith     xsd:time , xsd:float , xsd:dateTime , xsd:string , xsd:duration , xsd:date , xsd:boolean ;
+        owl:equivalentClass  xsd:integer ;
+        owl:sameAs           xsd:integer .
+
+owl:Class  a                 rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        owl:equivalentClass  owl:Class , rdfs:Class ;
+        owl:sameAs           owl:Class .
+
+xsd:date  a                  rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , xsd:date , rdfs:Resource ;
+        owl:disjointWith     xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:float , xsd:dateTime , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:duration , xsd:unsignedByte , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger ;
+        owl:equivalentClass  xsd:date ;
+        owl:sameAs           xsd:date .
+
+owl:Property  a              rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , owl:Property , owl:Thing ;
+        owl:equivalentClass  owl:Property ;
+        owl:sameAs           owl:Property .
+
+xsd:gYear  a                 rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , xsd:gYear , owl:Thing ;
+        owl:equivalentClass  xsd:gYear ;
+        owl:sameAs           xsd:gYear .
+
+xsd:duration  a              rdfs:Datatype , rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , xsd:duration , rdfs:Resource ;
+        owl:disjointWith     xsd:long , xsd:byte , xsd:unsignedShort , xsd:time , xsd:unsignedLong , xsd:float , xsd:dateTime , xsd:int , xsd:string , xsd:unsignedInt , xsd:short , xsd:nonNegativeInteger , xsd:unsignedByte , xsd:date , xsd:integer , xsd:decimal , xsd:boolean , xsd:nonPositiveInteger ;
+        owl:equivalentClass  xsd:duration ;
+        owl:sameAs           xsd:duration .
+
+rdfs:Literal  a              rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , rdfs:Literal , owl:Thing ;
+        owl:equivalentClass  rdfs:Literal ;
+        owl:sameAs           rdfs:Literal .
+
+owl:Nothing  a               owl:Class , rdfs:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , rdfs:Resource , owl:Nothing , xsd:float , xsd:duration , :Genre , :MovieDirector , rdf:Property , xsd:unsignedByte , rdf:List , owl:Restriction , xsd:string , rdf:Statement , xsd:time , owl:Ontology , :Actor , owl:Property , xsd:unsignedInt , xsd:nonPositiveInteger , :Writer , xsd:unsignedLong , :Movie , rdfs:Class , xsd:boolean , owl:Class , :FilmStudio , xsd:decimal , xsd:dateTime , <http://xmlns.com/foaf/0.1/Person> , rdfs:Literal , xsd:date , xsd:int , xsd:short , xsd:long , xsd:integer , xsd:nonNegativeInteger , xsd:unsignedShort , xsd:byte ;
+        owl:equivalentClass  owl:Nothing ;
+        owl:sameAs           owl:Nothing .
+
+rdfs:Class  a                rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , rdfs:Class , owl:Thing , owl:Class ;
+        owl:equivalentClass  rdfs:Class , owl:Class ;
+        owl:sameAs           rdfs:Class .
+
+rdf:rest  a                     rdf:Property , owl:FunctionalProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             rdf:List , rdfs:Resource , owl:Thing ;
+        rdfs:range              rdf:List , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      rdf:rest ;
+        owl:equivalentProperty  rdf:rest ;
+        owl:sameAs              rdf:rest .
+
+owl:AnnotationProperty
+        a                    rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , owl:AnnotationProperty , owl:Thing ;
+        owl:equivalentClass  owl:AnnotationProperty ;
+        owl:sameAs           owl:AnnotationProperty .
+
+rdfs:comment  a                 rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:range              rdfs:Literal , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      rdfs:comment ;
+        owl:equivalentProperty  rdfs:comment ;
+        owl:sameAs              rdfs:comment .
+
+owl:NamedIndividual  a       rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , owl:NamedIndividual , owl:Thing ;
+        owl:equivalentClass  owl:NamedIndividual ;
+        owl:sameAs           owl:NamedIndividual .
+
+:hasGender  a                   rdf:Property , owl:FunctionalProperty , owl:DatatypeProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      :hasGender ;
+        owl:equivalentProperty  :hasGender ;
+        owl:sameAs              :hasGender .
+
+:hasDateOfBirth  a              rdf:Property , owl:FunctionalProperty , owl:DatatypeProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      :hasDateOfBirth ;
+        owl:equivalentProperty  :hasDateOfBirth ;
+        owl:sameAs              :hasDateOfBirth .
+
+:hasName  a                     rdf:Property , owl:DatatypeProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource , owl:Thing ;
+        rdfs:range              xsd:string , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      :hasName ;
+        owl:equivalentProperty  :hasName ;
+        owl:sameAs              :hasName .
+
+rdfs:Container  a            rdfs:Class , rdfs:Resource , owl:Class , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , rdfs:Container , owl:Thing ;
+        owl:equivalentClass  rdfs:Container ;
+        owl:sameAs           rdfs:Container .
+
+:hasActor  a                    rdf:Property , owl:ObjectProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Thing , :Movie , rdfs:Resource ;
+        rdfs:range              owl:Thing , :Actor , rdfs:Resource , <http://xmlns.com/foaf/0.1/Person> ;
+        rdfs:subPropertyOf      :hasActor ;
+        owl:equivalentProperty  :hasActor ;
+        owl:minCardinality      1 ;
+        owl:sameAs              :hasActor .
+
+:hasReleaseDate  a              rdf:Property , owl:DatatypeProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             :Movie , owl:Thing , rdfs:Resource ;
+        rdfs:range              xsd:date , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      :hasReleaseDate ;
+        owl:equivalentProperty  :hasReleaseDate ;
+        owl:sameAs              :hasReleaseDate .
+
+rdfs:label  a                   rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:range              rdfs:Literal , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      rdfs:label ;
+        owl:equivalentProperty  rdfs:label ;
+        owl:sameAs              rdfs:label .
+
+:hasGenre  a                    rdf:Property , owl:ObjectProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Thing , :Movie , rdfs:Resource ;
+        rdfs:range              owl:Thing , :Genre , rdfs:Resource ;
+        rdfs:subPropertyOf      :hasGenre ;
+        owl:equivalentProperty  :hasGenre ;
+        owl:minCardinality      1 ;
+        owl:sameAs              :hasGenre .
+
+owl:minCardinality  a           rdf:Property , owl:AnnotationProperty , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      owl:minCardinality ;
+        owl:equivalentProperty  owl:minCardinality ;
+        owl:sameAs              owl:minCardinality .
+
+:hasFilmStudio  a               rdf:Property , owl:ObjectProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Thing , :Movie , rdfs:Resource ;
+        rdfs:range              owl:Thing , :FilmStudio , rdfs:Resource ;
+        rdfs:subPropertyOf      :hasFilmStudio ;
+        owl:equivalentProperty  :hasFilmStudio ;
+        owl:minCardinality      1 ;
+        owl:sameAs              :hasFilmStudio .
+
+owl:equivalentProperty
+        a                       rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      owl:equivalentProperty ;
+        owl:equivalentProperty  owl:equivalentProperty ;
+        owl:sameAs              owl:equivalentProperty .
+
+owl:versionIRI  a               rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      owl:versionIRI ;
+        owl:equivalentProperty  owl:versionIRI ;
+        owl:sameAs              owl:versionIRI .
+
+rdfs:seeAlso  a                 rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf      rdfs:seeAlso ;
+        owl:equivalentProperty  rdfs:seeAlso ;
+        owl:sameAs              rdfs:seeAlso .
+
+:hasEstablishedDate  a          rdf:Property , owl:FunctionalProperty , owl:DatatypeProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             :FilmStudio , owl:Thing , rdfs:Resource ;
+        rdfs:subPropertyOf      :hasEstablishedDate ;
+        owl:equivalentProperty  :hasEstablishedDate ;
+        owl:sameAs              :hasEstablishedDate .
+
+<http://xmlns.com/foaf/0.1/knows>
+        a                       owl:ObjectProperty , rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        rdfs:range              owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        rdfs:subPropertyOf      <http://xmlns.com/foaf/0.1/knows> ;
+        owl:equivalentProperty  <http://xmlns.com/foaf/0.1/knows> ;
+        owl:sameAs              <http://xmlns.com/foaf/0.1/knows> .
+
+:hasCrew  a                     owl:ObjectProperty , rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Thing , :Movie , rdfs:Resource ;
+        rdfs:range              owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        rdfs:subPropertyOf      :hasCrew ;
+        owl:equivalentProperty  :hasCrew ;
+        owl:sameAs              :hasCrew .
+
+:Movie  a                    rdfs:Class , owl:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , :Movie , rdfs:Resource ;
+        owl:equivalentClass  :Movie ;
+        owl:sameAs           :Movie .
+
+:Writer  a                   rdfs:Class , owl:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , rdfs:Resource , :Writer , <http://xmlns.com/foaf/0.1/Person> ;
+        owl:equivalentClass  :Writer ;
+        owl:sameAs           :Writer .
+
+:Actor  a                    rdfs:Class , owl:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , owl:Thing , :Actor , <http://xmlns.com/foaf/0.1/Person> ;
+        owl:equivalentClass  :Actor ;
+        owl:sameAs           :Actor .
+
+:FilmStudio  a               rdfs:Class , owl:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subClassOf      owl:Thing , :FilmStudio , rdfs:Resource ;
+        owl:equivalentClass  :FilmStudio ;
+        owl:sameAs           :FilmStudio .
+
+:Genre  a                    rdfs:Class , owl:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subClassOf      :Genre , rdfs:Resource , owl:Thing ;
+        owl:equivalentClass  :Genre ;
+        owl:sameAs           :Genre .
+
+:hasWriter  a                   rdf:Property , owl:ObjectProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Thing , :Movie , rdfs:Resource ;
+        rdfs:range              owl:Thing , :Writer , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        rdfs:subPropertyOf      :hasWriter , :hasCrew ;
+        owl:equivalentProperty  :hasWriter ;
+        owl:minCardinality      1 ;
+        owl:sameAs              :hasWriter .
+
+:friendOf  a                    owl:SymmetricProperty , owl:ObjectProperty , rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        rdfs:range              owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        rdfs:subPropertyOf      :friendOf , <http://xmlns.com/foaf/0.1/knows> ;
+        owl:equivalentProperty  :friendOf ;
+        owl:sameAs              :friendOf .
+
+:hasMovieDirector  a            rdf:Property , owl:ObjectProperty , rdfs:Resource , owl:Thing ;
+        rdfs:domain             owl:Thing , :Movie , rdfs:Resource ;
+        rdfs:range              owl:Thing , :MovieDirector , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        rdfs:subPropertyOf      :hasMovieDirector , :hasCrew ;
+        owl:equivalentProperty  :hasMovieDirector ;
+        owl:minCardinality      1 ;
+        owl:sameAs              :hasMovieDirector .
+
+:MovieDirector  a            rdfs:Class , owl:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , owl:Thing , :MovieDirector , <http://xmlns.com/foaf/0.1/Person> ;
+        owl:equivalentClass  :MovieDirector ;
+        owl:sameAs           :MovieDirector .
+
+<http://xmlns.com/foaf/0.1/Person>
+        a                    rdfs:Class , owl:Class , rdfs:Resource , owl:Thing ;
+        rdfs:subClassOf      rdfs:Resource , owl:Thing , <http://xmlns.com/foaf/0.1/Person> ;
+        owl:equivalentClass  <http://xmlns.com/foaf/0.1/Person> ;
+        owl:sameAs           <http://xmlns.com/foaf/0.1/Person> .
+
+:genre_action  a    :Genre , owl:NamedIndividual , owl:Thing , rdfs:Resource ;
+        rdfs:label  "Action" ;
+        owl:sameAs  :genre_action .
+
+ex:julius_avery  a  :Writer , :MovieDirector , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasGender  "male" ;
+        :hasName    "Julius Avery" ;
+        owl:sameAs  ex:julius_avery .
+
+ex:movie_2  a              :Movie , owl:NamedIndividual , owl:Thing , rdfs:Resource ;
+        rdfs:label         "Son of a Gun" ;
+        :hasActor          ex:ewan_mcgregor , ex:alicia_vikander ;
+        :hasCrew           ex:julius_avery , ex:writer_3 ;
+        :hasFilmStudio     ex:EntertainmentOne ;
+        :hasGenre          :genre_drama , :genre_action ;
+        :hasMovieDirector  ex:julius_avery ;
+        :hasReleaseDate    "2014-01-01"^^xsd:date ;
+        :hasWriter         ex:writer_3 , ex:julius_avery ;
+        owl:sameAs         ex:movie_2 .
+
+ex:EntertainmentOne  a       :FilmStudio , owl:NamedIndividual , owl:Thing , rdfs:Resource ;
+        rdfs:label           "Entertainment One" ;
+        :hasEstablishedDate  "1973-01-01" ;
+        owl:sameAs           ex:EntertainmentOne .
+
+:genre_romance  a   :Genre , owl:NamedIndividual , owl:Thing , rdfs:Resource ;
+        rdfs:label  "Romance" ;
+        owl:sameAs  :genre_romance .
+
+ex:writer_5  a      :Writer , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasName    "Evan Spiliotopoulos" ;
+        owl:sameAs  ex:writer_5 .
+
+ex:WaltDisneyPictures
+        a                    :FilmStudio , owl:NamedIndividual , owl:Thing , rdfs:Resource ;
+        rdfs:label           "Walt Disney Pictures" ;
+        :hasEstablishedDate  "1985-06-21" ;
+        owl:sameAs           ex:WaltDisneyPictures .
+
+ex:movie_1  a              :Movie , owl:NamedIndividual , owl:Thing , rdfs:Resource ;
+        rdfs:label         "Christopher Robin" ;
+        :hasActor          ex:hayley_atwell , ex:ewan_mcgregor ;
+        :hasCrew           ex:marc_forster , ex:writer_2 , ex:writer_1 ;
+        :hasFilmStudio     ex:WaltDisneyPictures ;
+        :hasGenre          :genre_family , :genre_animation ;
+        :hasMovieDirector  ex:marc_forster ;
+        :hasReleaseDate    "2018-01-01"^^xsd:date ;
+        :hasWriter         ex:writer_2 , ex:writer_1 ;
+        owl:sameAs         ex:movie_1 .
+
+:genre_drama  a     :Genre , owl:NamedIndividual , owl:Thing , rdfs:Resource ;
+        rdfs:label  "Drama" ;
+        owl:sameAs  :genre_drama .
+
+ex:bill_condon  a   :MovieDirector , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasGender  "male" ;
+        :hasName    "Bill Condon" ;
+        owl:sameAs  ex:bill_condon .
+
+:genre_family  a    :Genre , owl:NamedIndividual , owl:Thing , rdfs:Resource ;
+        rdfs:label  "Family" ;
+        owl:sameAs  :genre_family .
+
+ex:writer_4  a      :Writer , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasGender  "male" ;
+        :hasName    "Stephen Chbosky" ;
+        owl:sameAs  ex:writer_4 .
+
+ex:dan_stevens  a        :Actor , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasDateOfBirth  "1982-10-10" ;
+        :hasGender       "male" ;
+        :hasName         "Dan Stevens" ;
+        owl:sameAs       ex:dan_stevens .
+
+ex:emma_watson  a        :Actor , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasDateOfBirth  "1990-04-15" ;
+        :hasGender       "female" ;
+        :hasName         "Emma Watson" ;
+        owl:sameAs       ex:emma_watson .
+
+ex:marc_forster  a  :MovieDirector , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasGender  "male" ;
+        :hasName    "Marc Forster" ;
+        owl:sameAs  ex:marc_forster .
+
+ex:writer_3  a      :Writer , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasGender  "male" ;
+        :hasName    "John Collee" ;
+        owl:sameAs  ex:writer_3 .
+
+ex:MandevilleFilms  a        :FilmStudio , owl:NamedIndividual , owl:Thing , rdfs:Resource ;
+        rdfs:label           "Mandeville Films" ;
+        :hasEstablishedDate  "1955-01-01" ;
+        owl:sameAs           ex:MandevilleFilms .
+
+<http://semantics.id/ns/example/movie>
+        a               owl:Ontology , rdfs:Resource , owl:Thing ;
+        rdfs:comment    "An ontology about movie and related concepts." ;
+        owl:sameAs      <http://semantics.id/ns/example/movie> ;
+        owl:versionIRI  <http://semantics.id/ns/example/movie/1.0.1> .
+
+ex:writer_2  a      :Writer , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasName    "Alex Ross" ;
+        owl:sameAs  ex:writer_2 .
+
+:genre_animation  a  :Genre , owl:NamedIndividual , owl:Thing , rdfs:Resource ;
+        rdfs:label  "Animation" ;
+        owl:sameAs  :genre_animation .
+
+ex:alicia_vikander  a  :Actor , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasGender  "female" ;
+        :hasName    "Alicia Vikander" ;
+        owl:sameAs  ex:alicia_vikander .
+
+ex:ewan_mcgregor  a      :Actor , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasDateOfBirth  "1971-03-31" ;
+        :hasGender       "male" ;
+        :hasName         "Ewan McGregor" ;
+        owl:sameAs       ex:ewan_mcgregor .
+
+ex:movie_3  a              owl:NamedIndividual , :Movie , owl:Thing , rdfs:Resource ;
+        rdfs:label         "Beauty and the Beast"@en ;
+        :hasActor          ex:dan_stevens , ex:emma_watson , ex:ewan_mcgregor ;
+        :hasCrew           ex:bill_condon , ex:writer_4 , ex:writer_5 ;
+        :hasFilmStudio     ex:WaltDisneyPictures ;
+        :hasGenre          :genre_family , :genre_romance , :genre_animation ;
+        :hasMovieDirector  ex:bill_condon ;
+        :hasReleaseDate    "2017-01-01"^^xsd:date ;
+        :hasWriter         ex:writer_4 , ex:writer_5 ;
+        owl:sameAs         ex:movie_3 .
+
+ex:writer_1  a           :Writer , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasDateOfBirth  "1966-06-07" ;
+        :hasGender       "male" ;
+        :hasName         "Tom McCarthy" ;
+        owl:sameAs       ex:writer_1 .
+
+ex:hayley_atwell  a      :Actor , owl:NamedIndividual , owl:Thing , <http://xmlns.com/foaf/0.1/Person> , rdfs:Resource ;
+        :hasDateOfBirth  "1982-04-05" ;
+        :hasGender       "female" ;
+        :hasName         "Hayley Atwell" ;
+        owl:sameAs       ex:hayley_atwell .
+
+rdfs:member  a              rdf:Property , rdfs:Resource , owl:Thing ;
+        rdfs:subPropertyOf  rdfs:member ;
+        owl:sameAs          rdfs:member .

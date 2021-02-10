@@ -1,0 +1,5 @@
+PREFIX : <http://semantics.id/ns/example/movie#>
+describe ?movie where {
+	?actor :hasName "Emma Watson" .
+    ?movie :hasActor ?actor .
+}

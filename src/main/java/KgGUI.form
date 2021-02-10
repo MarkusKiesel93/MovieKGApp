@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="KgGUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="29" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="36" y="1" width="776" height="900"/>
+    </constraints>
+    <properties>
+      <enabled value="true"/>
+      <foreground color="-12534988"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="58d8a" class="javax.swing.JButton" binding="exportButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="export"/>
+        </properties>
+      </component>
+      <component id="68180" class="javax.swing.JButton" binding="applyReasonerButton">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="apply reasoner"/>
+        </properties>
+      </component>
+      <component id="5bbfa" class="javax.swing.JButton" binding="addPropertyButton" default-binding="true">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="add property"/>
+        </properties>
+      </component>
+      <component id="ece72" class="javax.swing.JButton" binding="addMovieInstanceButton">
+        <constraints>
+          <grid row="21" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="add movie instance"/>
+        </properties>
+      </component>
+      <component id="64f02" class="javax.swing.JButton" binding="executeQueryButton" default-binding="true">
+        <constraints>
+          <grid row="25" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="execute query"/>
+        </properties>
+      </component>
+      <component id="58858" class="javax.swing.JRadioButton" binding="transitiveRadioButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="170" height="23"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Transitive"/>
+        </properties>
+      </component>
+      <component id="7a440" class="javax.swing.JRadioButton" binding="MICRORuleBasedRadioButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="MICRO rule-based"/>
+        </properties>
+      </component>
+      <component id="3ca57" class="javax.swing.JRadioButton" binding="OWLRuleBasedRadioButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="116" height="23"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="OWL  rule-based"/>
+        </properties>
+      </component>
+      <component id="f3fbb" class="javax.swing.JRadioButton" binding="MINIRuleBasedRadioButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="MINI rule-based"/>
+        </properties>
+      </component>
+      <component id="72ab4" class="javax.swing.JRadioButton" binding="turtleRadioButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="170" height="23"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Turtle"/>
+        </properties>
+      </component>
+      <component id="35a6b" class="javax.swing.JRadioButton" binding="nTriplesRadioButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="116" height="23"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="N-Triples"/>
+        </properties>
+      </component>
+      <component id="dd6de" class="javax.swing.JRadioButton" binding="RDFJSONRadioButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="RDF/JSON"/>
+        </properties>
+      </component>
+      <component id="38544" class="javax.swing.JRadioButton" binding="RDFXMLRadioButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="RDF/XML"/>
+        </properties>
+      </component>
+      <component id="d9ca9" class="javax.swing.JTextField" binding="nsCCTextField">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="http://semantics.id/ns/example/movie#"/>
+        </properties>
+      </component>
+      <component id="c980b" class="javax.swing.JTextField" binding="classNameCCTextField">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="4d2b8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Namespace"/>
+        </properties>
+      </component>
+      <component id="f6038" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Class name"/>
+        </properties>
+      </component>
+      <component id="8fa35" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Namespace"/>
+        </properties>
+      </component>
+      <component id="91fda" class="javax.swing.JTextField" binding="nsPropertyPCTextField">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="http://semantics.id/ns/example/movie#"/>
+        </properties>
+      </component>
+      <component id="421ee" class="javax.swing.JTextField" binding="propertyPCTextField">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="property"/>
+        </properties>
+      </component>
+      <component id="592ce" class="javax.swing.JTextField" binding="nsDomainPCTextField">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="http://semantics.id/ns/example/movie#"/>
+        </properties>
+      </component>
+      <component id="49a66" class="javax.swing.JTextField" binding="nsRangePCTextField">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="http://semantics.id/ns/example/movie#"/>
+        </properties>
+      </component>
+      <component id="1edaa" class="javax.swing.JTextField" binding="domainPCTextField">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="domain"/>
+        </properties>
+      </component>
+      <component id="12a1" class="javax.swing.JTextField" binding="rangePCTextField">
+        <constraints>
+          <grid row="12" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="range"/>
+        </properties>
+      </component>
+      <component id="c4dc1" class="javax.swing.JButton" binding="addOntologyClassButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="add ontology class"/>
+        </properties>
+      </component>
+      <component id="824d0" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-4473925"/>
+          <text value="Basic operations"/>
+        </properties>
+      </component>
+      <component id="52702" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Ontology operations "/>
+        </properties>
+      </component>
+      <component id="2d5db" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="23" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Basic query operations "/>
+        </properties>
+      </component>
+      <vspacer id="67bd3">
+        <constraints>
+          <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="dc422" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Value"/>
+        </properties>
+      </component>
+      <component id="b788" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="27" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="OUTPUT"/>
+        </properties>
+      </component>
+      <vspacer id="65cdc">
+        <constraints>
+          <grid row="26" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <scrollpane id="d885b">
+        <constraints>
+          <grid row="28" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="e5762" class="javax.swing.JTextArea" binding="outputArea">
+            <constraints/>
+            <properties>
+              <rows value="10"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="e7c92" class="javax.swing.JComboBox" binding="selectQueryCBox">
+        <constraints>
+          <grid row="24" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Q2: Return all movies with their title"/>
+            <item value="Q4: Is there an actress named “Emma Watson” with gender Male?"/>
+            <item value="Q6: Give me all information about movies where Emma Watson is playing"/>
+            <item value="Q12: Select name of actors who play in movies released after 2016 and with title containing string “Beauty”"/>
+            <item value="Q15: Count the number of actors involved in each movie!"/>
+            <item value="Q17: List all actors and crews together with the title of movies that they’re involved ordered by their name."/>
+          </model>
+        </properties>
+      </component>
+      <component id="2322d" class="javax.swing.JTextField" binding="inputMovieTitle">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Example Movie 1"/>
+        </properties>
+      </component>
+      <component id="ee1de" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Movie title:"/>
+        </properties>
+      </component>
+      <component id="1a145" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Actors:"/>
+        </properties>
+      </component>
+      <component id="df2d4" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="FilmStudio:"/>
+        </properties>
+      </component>
+      <component id="47da7" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Genre:"/>
+        </properties>
+      </component>
+      <component id="eec28" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Movie director:"/>
+        </properties>
+      </component>
+      <component id="29616" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Writer"/>
+        </properties>
+      </component>
+      <component id="19174" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Release date"/>
+        </properties>
+      </component>
+      <component id="9da44" class="javax.swing.JTextField" binding="inputMovieActors">
+        <constraints>
+          <grid row="15" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="dan_stevens,emma_watson"/>
+        </properties>
+      </component>
+      <component id="9fc19" class="javax.swing.JTextField" binding="inputMovieStudio">
+        <constraints>
+          <grid row="16" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="WaltDisneyPictures"/>
+        </properties>
+      </component>
+      <component id="3e85b" class="javax.swing.JTextField" binding="inputMovieGenre">
+        <constraints>
+          <grid row="17" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="genre_romance,genre_animation"/>
+        </properties>
+      </component>
+      <component id="7239" class="javax.swing.JTextField" binding="inputMovieDirector">
+        <constraints>
+          <grid row="18" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="bill_condon"/>
+        </properties>
+      </component>
+      <component id="31051" class="javax.swing.JTextField" binding="inputMovieWriter">
+        <constraints>
+          <grid row="19" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="writer_4,writer_3"/>
+        </properties>
+      </component>
+      <component id="56f54" class="javax.swing.JTextField" binding="inputMovieRelease">
+        <constraints>
+          <grid row="20" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="2020-01-01"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="reasonerChoice">
+      <member id="58858"/>
+      <member id="7a440"/>
+      <member id="3ca57"/>
+      <member id="f3fbb"/>
+    </group>
+    <group name="exportChoice">
+      <member id="72ab4"/>
+      <member id="35a6b"/>
+      <member id="38544"/>
+      <member id="dd6de"/>
+    </group>
+  </buttonGroups>
+</form>
